@@ -1,0 +1,43 @@
+# Build outputs
+target/
+bin/
+build/
+out/
+
+# IDE
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Configuraciones locales (excepto las del proyecto)
+*.properties
+!src/main/resources/*.properties
+!src/test/resources/*.properties
