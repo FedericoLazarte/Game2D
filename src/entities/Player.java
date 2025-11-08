@@ -53,19 +53,15 @@ public class Player extends Entity {
 		if (keyH.upPressed || keyH.downPressed || keyH.leftPressed || keyH.rightPressed) {
 			if (keyH.upPressed) {
 				direction = "up";
-				worldY -= speed;
 			}
 			else if (keyH.downPressed) {
 				direction = "down";
-				worldY += speed;
 			}
 			else if (keyH.leftPressed) {
 				direction = "left";
-				worldX -= speed;
 			}
 			else if (keyH.rightPressed) {
 				direction = "right";
-				worldX += speed;
 			}
 			
 			// Check tile collision
