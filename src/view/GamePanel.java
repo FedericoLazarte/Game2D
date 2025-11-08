@@ -7,6 +7,7 @@ import java.awt.Graphics2D;
 
 import javax.swing.JPanel;
 
+import entities.CollisionChecker;
 import entities.Player;
 import entities.TileManager;
 import utils.KeyHandler;
@@ -21,9 +22,10 @@ public class GamePanel extends JPanel implements Runnable {
 	public final int screenWidth = tileSize * maxScreenCol; // 768 pixels
 	public final int screenHeight = tileSize * maxScreenRow; // 576 pixels
 	public int FPS = 60;
-	TileManager tileM = new TileManager(this);
+	public TileManager tileM = new TileManager(this);
 	KeyHandler keyH = new KeyHandler();
 	Thread gameThread;
+	public CollisionChecker cChecker = new CollisionChecker(this);
 	public Player player = new Player(this, keyH);
 	
 	// World Settings
